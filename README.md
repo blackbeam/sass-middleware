@@ -28,3 +28,4 @@ app.use(require('sass-middleware')({
 3. `dest` - Destination path (defaults to `options.src`)
 4. `quiet` - Suppress output (defaults to `false`)
 5. `cache_location` - Path to sass cache location (defaults to sass default cache location)
+6. `style` - output style (defaults to sass default output style)
