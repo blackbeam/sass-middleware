@@ -13,6 +13,7 @@ npm install sass-middleware
 ```
 
 ### Usage:
+**Make shure static middleware was placed after sass-middleware**
 ```javascript
 // app.use(require('sass-middleware')(options))
 app.use(require('sass-middleware')({
@@ -20,6 +21,7 @@ app.use(require('sass-middleware')({
   src: 'public',
   quiet: true
 }));
+app.use(connect.static('public'));
 ```
 
 ### Options:
